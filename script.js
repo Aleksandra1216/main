@@ -1,70 +1,44 @@
-// задание 1
-let password = String( prompt('Какой пароль'));
-if (password >= 8) {
-    alert('Пароль введен верно');
-} else {
-    alert('Пароль введен неверно')
+// Задание 1 Выведите в консоль 2 раза слово «Привет».
+
+let i =1;
+let n = Number(prompt('Сколько раз вам сказать привет'));
+while (i <= n){
+    alert('Привет');
+    i++;
+}
+// Задание 2 Выведите в консоль цифры от 1 до 5.
+
+let a= 0;
+while (a<6){ 
+    console.log(a);
+    a++;
+};
+
+// Задание 3 Выведите в консоль числа от 7 до 22.
+for (let c = 7; c <= 22; c++) {
+	console.log(c); 
 }
 
-// задание 2
-let c = String(prompt('введите число'));
-(c >= 0 && c <= 10) ? console.log('Верно') : console.log('неверно');
 
+// Задание 4
 
-// задание 3
-let d =String(prompt('Введите какое то число'));
-let e =String(prompt('Введите какое то число'));
-if (d > 100 || e > 100) {
-    console.log('верно');
-} else {
-    console.log('неверно');
+ const week = {
+    Коля: "зарплата 200 долларов",
+    Вася: "зарплата 300 долларов",
+    Петя: "зарплата 400 долларов",
+ }
+
+ for ( let obj in week) {
+    console.log(obj); // Коля, Вся, Петя
+    console.log(week[obj]); //зарплата 200 долларов
 }
 
+// Задание 5
 
-// задание 4
-let a = '2';
-let b = '3';
-// Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже: 
-alert( +a + +b ); // 5
+for (let n = 1000, num = 0; n > 50; num++) {
 
+    n /= 2;
+        alert( n );
+    }
 
-// задание 5
-let monthNamber =String(prompt('Введите месяц'));
-switch(monthNamber) {
-    case '1':
-        console.log('зима');
-        break;
-    case '2':
-        console.log('зима');
-        break;
-    case '3':
-        console.log('весна');
-        break;
-    case '4':
-        console.log('весна');
-        break;
-    case '5':
-        console.log('весна');
-        break;
-    case '6':
-        console.log('лето');
-        break;
-    case '7':
-        console.log('лето');
-        break;
-    case '8':
-        console.log('лето');
-        break;
-    case '9':
-        console.log('осень');
-        break;
-    case '10':
-        console.log('осень');
-        break;
-    case '11':
-        console.log('осень');
-        break;
-    case '12':
-        console.log('зима');
-        break;
-}
+// Задание 6
