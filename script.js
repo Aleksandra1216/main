@@ -1,70 +1,78 @@
-// задание 1
-let password = String( prompt('Какой пароль'));
-if (password >= 8) {
-    alert('Пароль введен верно');
-} else {
-    alert('Пароль введен неверно')
+// Задание 1
+let a;    // объявляем переменную
+a = 10;    // записываем в нее значение 1
+alert(a); // выведет 10
+a = 20;    // записываем теперь значение 20, затирая значение 10
+alert(a); // выведет 20
+
+//Задание 2
+let years = " 2007";
+alert(years);
+
+
+//Задание 3
+let name = "Брендан Айк";
+alert(name);
+
+
+//Задание 4
+let b = 10;
+let c = 2;
+alert(`сумма: ${b + c} `);
+alert(`разность: ${b - c} `);
+alert(`произведение: ${b * c} `);
+alert(`частное: ${b / c} `);
+
+//Задание 5
+let d = 2;
+let result = d ** 5;
+alert(result);
+
+
+//Задание 6
+let e = 9;
+let f = 2;
+alert(e % f);
+
+
+//Задание 7
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num ++;
+num --;
+alert(num);
+
+
+//Задание 8
+let age = Number(prompt('Сколько вам лет?'));
+alert(age);
+
+
+//Задание 9.0
+let user = {
+    name: "Kirill",
+    age: "18",
+    isAdmin: "true",
 }
 
-// задание 2
-let c = String(prompt('введите число'));
-(c >= 0 && c <= 10) ? console.log('Верно') : console.log('неверно');
+//Задание 9.1
+user['city of residence']= "Moscow",
 
 
-// задание 3
-let d =String(prompt('Введите какое то число'));
-let e =String(prompt('Введите какое то число'));
-if (d > 100 || e > 100) {
-    console.log('верно');
-} else {
-    console.log('неверно');
-}
+//Задание 9.2
+user.age = 34;
 
 
-// задание 4
-let a = '2';
-let b = '3';
-// Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже: 
-alert( +a + +b ); // 5
+//Задание 9.3
+delete user["city of residence"];
 
+//Задание 9.4
+let info= prompt("Какую информацию хотите узнать о пользователе?");
+alert(user[info]);
 
-// задание 5
-let monthNamber =String(prompt('Введите месяц'));
-switch(monthNamber) {
-    case '1':
-        console.log('зима');
-        break;
-    case '2':
-        console.log('зима');
-        break;
-    case '3':
-        console.log('весна');
-        break;
-    case '4':
-        console.log('весна');
-        break;
-    case '5':
-        console.log('весна');
-        break;
-    case '6':
-        console.log('лето');
-        break;
-    case '7':
-        console.log('лето');
-        break;
-    case '8':
-        console.log('лето');
-        break;
-    case '9':
-        console.log('осень');
-        break;
-    case '10':
-        console.log('осень');
-        break;
-    case '11':
-        console.log('осень');
-        break;
-    case '12':
-        console.log('зима');
-        break;
-}
+//Задание 10
+let userName = prompt("Как Вас зовут?");
+alert(`Привет, ${userName}!`);
