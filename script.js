@@ -1,78 +1,52 @@
-// Задание 1
-let a;    // объявляем переменную
-a = 10;    // записываем в нее значение 1
-alert(a); // выведет 10
-a = 20;    // записываем теперь значение 20, затирая значение 10
-alert(a); // выведет 20
 
-//Задание 2
-let years = " 2007";
-alert(years);
-
-
-//Задание 3
-let name = "Брендан Айк";
-alert(name);
-
-
-//Задание 4
-let b = 10;
-let c = 2;
-alert(`сумма: ${b + c} `);
-alert(`разность: ${b - c} `);
-alert(`произведение: ${b * c} `);
-alert(`частное: ${b / c} `);
-
-//Задание 5
-let d = 2;
-let result = d ** 5;
-alert(result);
-
-
-//Задание 6
-let e = 9;
-let f = 2;
-alert(e % f);
-
-
-//Задание 7
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num ++;
-num --;
-alert(num);
-
-
-//Задание 8
-let age = Number(prompt('Сколько вам лет?'));
-alert(age);
-
-
-//Задание 9.0
-let user = {
-    name: "Kirill",
-    age: "18",
-    isAdmin: "true",
+// Задание 1 Выведите в консоль 2 раза слово «Привет».
+let i =1;
+let n = Number(prompt('Сколько раз вам сказать привет'));
+while (i <= n){
+    alert('Привет');
+    i++;
 }
 
-//Задание 9.1
-user['city of residence']= "Moscow",
+
+// Задание 2 Выведите в консоль цифры от 1 до 5.
+
+let a= 0;
+while (a<6){ 
+    console.log(a);
+    a++;
+};
+
+// Задание 3 Выведите в консоль числа от 7 до 22.
+for (let c = 7; c <= 22; c++) {
+	console.log(c); 
+}
 
 
-//Задание 9.2
-user.age = 34;
+// Задание 4
 
+ const week = {
+    Коля: "зарплата 200 долларов",
+    Вася: "зарплата 300 долларов",
+    Петя: "зарплата 400 долларов",
+ }
 
-//Задание 9.3
-delete user["city of residence"];
+ for ( let obj in week) {
+    console.log(obj); // Коля, Вся, Петя
+    console.log(week[obj]); //зарплата 200 долларов
+}
 
-//Задание 9.4
-let info= prompt("Какую информацию хотите узнать о пользователе?");
-alert(user[info]);
+// Задание 5
 
-//Задание 10
-let userName = prompt("Как Вас зовут?");
-alert(`Привет, ${userName}!`);
+for (let n = 1000, num = 0; n > 50; num++) {
+
+    n /= 2;
+        alert( n );
+    }
+
+// Задание 6 
+
+let numberDate = 1;
+let dateInMonth = 31;
+for ( let day = 1; day <= 31; day += 7) {
+    console.log ("Сегодня пятница, " + day + " -е число. Необходимо подготовить отчет");
+}
