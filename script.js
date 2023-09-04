@@ -45,8 +45,6 @@ for (let n = 1000, num = 0; n > 50; num++) {
 
 // Задание 6 
 
-let numberDate = 1;
-let dateInMonth = 31;
-for ( let day = 1; day <= 31; day += 7) {
-    console.log ("Сегодня пятница, " + day + " -е число. Необходимо подготовить отчет");
+for (let friday = 5; friday <= 31; friday+=7) {
+    console.log (`Сегодня пятница ${friday}-е число. Необходимо подготовить отчет`); 
 }
