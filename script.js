@@ -1,50 +1,77 @@
+// Задание 1
+  function Number(num1, num2) {
+    if (num1 <= num2) {
+    return num1;
+    } else {
+    return num2;
+    }
+    }
+    
+    console.log(Number(8, 4)); // 4
+    console.log(Number(6, 6)); // 6
 
-// Задание 1 Выведите в консоль 2 раза слово «Привет».
-let i =1;
-let n = Number(prompt('Сколько раз вам сказать привет'));
-while (i <= n){
-    alert('Привет');
-    i++;
+// Задание 2
+function checkEvenOdd(number) {
+  if (number % 2 === 0) {
+  return 'Число четное';
+  } else {
+  return 'Число нечетное';
+  }
+  }
+// Примеры использования:
+  console.log(checkEvenOdd(4)); // Число четное
+  console.log(checkEvenOdd(7)); // Число нечетное
+
+
+// Задание 3
+function squareNumber(num) {
+  var square = num * num;
+  console.log(square);
 }
 
 
-// Задание 2 Выведите в консоль цифры от 1 до 5.
-
-let a= 0;
-while (a<6){ 
-    console.log(a);
-    a++;
-};
-
-// Задание 3 Выведите в консоль числа от 7 до 22.
-for (let c = 7; c <= 22; c++) {
-	console.log(c); 
+function squareNumber(num) {
+  var square = num * num;
+  return square;
 }
 
+console.log(squareNumber(7));
 
 // Задание 4
+let age = parseInt(prompt("Сколько вам лет?"));
 
- const week = {
-    Коля: "зарплата 200 долларов",
-    Вася: "зарплата 300 долларов",
-    Петя: "зарплата 400 долларов",
- }
-
- for ( let obj in week) {
-    console.log(obj); // Коля, Вся, Петя
-    console.log(week[obj]); //зарплата 200 долларов
+if (age < 0) {
+  console.log("Вы ввели неправильное значение");
+} else if (age <= 12) {
+  console.log("Привет, друг!");
+} else {
+  console.log("Добро пожаловать!");
 }
 
 // Задание 5
 
-for (let n = 1000, num = 0; n > 50; num++) {
+function multiplyNumbers(num1, num2) {
+let num1 =prompt("Введите первое число");
+let num2 =prompt("Введите второе число");
+  // Проверяем, являются ли параметры числами
+ /if (isNaN(num1) || isNaN(num2)) {
+/ return "Одно или оба значения не являются числом";
+  }
+  // Если оба параметра - числа, возвращаем их произведение
+  return num1 * num2;
+  }
 
-    n /= 2;
-        alert( n );
-    }
+// Задание 6
 
-// Задание 6 
+function cubeNumber() {
+  let number = prompt("Введите число:");
+  if (isNaN(number)) {
+  return "Переданный параметр не является числом";
+  } else {
+  let cube = parseInt(number) ** 3;
+  return `${number} в кубе равняется ${cube}`;
+  }
+  }
 
-for (let friday = 5; friday <= 31; friday+=7) {
-    console.log (`Сегодня пятница ${friday}-е число. Необходимо подготовить отчет`); 
-}
+// Задание 7
+// Задание 8
