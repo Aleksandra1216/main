@@ -1,24 +1,40 @@
 // Задание 1
-let q = Number(prompt('Введите число'));
-let w = Number(prompt('Введите число'));
-   if (q < w) {
-    console.log(q);
-   } else {
-    console.log(w);
-   }
+function getMinNumber(a, b) {
+  if (a <= b) {
+  return a;
+  } else {
+  return b;
+  }
+  }
+  
+  console.log(getMinNumber(8, 4)); // 4
+  console.log(getMinNumber(6, 6)); // 6 
+
 
 // Задание 2
-let d = Number(prompt('Введите число'));
- if (d % 2 === 0) {
-  console.log("Число четное");
+function checkEvenOdd(number) {
+  if (number % 2 === 0) {
+  return 'Число четное';
   } else {
-     console.log("Число нечетное");
+  return 'Число нечетное';
   }
+  }
+  
+  // Примеры использования:
+  console.log(checkEvenOdd(4)); // Число четное
+  console.log(checkEvenOdd(7)); // Число нечетное
  
 // Задание 3
-let n = (prompt('Введите число'));
-console.log(`${n*n}`);
-console.log(n);
+function squareNumber(n) {
+  var square = n * n;
+  console.log(square);
+}
+
+function squareNumber(n) {
+  return n;
+}
+console.log(squareNumber(2));
+
 
 // Задание 4
 let age = parseInt(prompt("Сколько вам лет?"));
@@ -31,24 +47,33 @@ if (age < 0) {
 }
 
 // Задание 5
-let num1=Number(prompt('Введите число'));
-let num2=Number(prompt('Введите число'));
+function multiplyNumbers(d, c) {
   // Проверяем, являются ли параметры числами
-  if (isNaN(num1) || isNaN(num2)) {
-    console.log("Одно или оба значения не являются числом");
-  } else{
-    console.log (`${num1*num2}`);
+  if (isNaN(d) || isNaN(c)) {
+  return 'Одно или оба значения не являются числом';
   }
+  
+  // Если оба параметра - числа, возвращаем их произведение
+  return d * c;
+  }
+  console.log(multiplyNumbers(1));
+  console.log(multiplyNumbers(1));
+ 
 
  
 // Задание 6
-  let number = prompt("Введите число:");
-  if (isNaN(number)){
-    console.log("Переданный параметр не является числом");
+function cubeNumber() {
+  let num = prompt("Введите число:");
+  if (isNaN(num)) {
+  return "Переданный параметр не является числом";
   } else {
-    let cube = parseInt(number) ** 3;
-    console.log(`${number} в кубе равняется ${cube}`);
+  let cube = parseInt(num) ** 3;
+  return (`${num} в кубе равняется ${cube}`);
   }
+  }
+  
+  console.log(cubeNumber(5));
+  
 
   
 // Задание 7
@@ -92,15 +117,18 @@ console.log(circle2.getPerimeter()); // Вывод: 62.8318530717958
 
 
 // Задание 8
-let month= (prompt('Введите число месяца'));
-  if (month === 12 && month >=1 && month <= 2) {
-  console.log("Зима"); 
-  } else if (month >= 3  && month <= 5) {
-  console.log("Весна") ;
-  } else if (month >= 6 &&  month <= 8) {
-  console.log("Лето"); 
-  } else if (month >=9 && month <= 11) {
-  console.log("Осень"); 
-  } else  {
-  console.log("Неправильный параметр!"); 
- }
+function getSeason(month) {
+  if (month === 12 || month === 1 || month === 2) {
+  return "Зима";
+  } else if (month === 3 || month === 4 || month === 5) {
+  return "Весна";
+  } else if (month === 6 || month === 7 || month === 8) {
+  return "Лето";
+  } else if (month === 9 || month === 10 || month === 11) {
+  return "Осень";
+  } else {
+  return "Неправильный параметр!";
+  }
+  }
+  
+  console.log(getSeason(9)); // Вывод: Осень
