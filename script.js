@@ -1,3 +1,12 @@
+function dellMessage() {
+  let del= confirm ('Вы правда хотите начать игру?');
+  if (del) {
+    alert('Начинаем!');
+  }  else {
+    alert('В следующий раз');
+}
+}
+
 // Задание 1
 function getMinNumber(a, b) {
   if (a <= b) {
