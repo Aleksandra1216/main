@@ -1,50 +1,64 @@
-
-// Задание 1 Выведите в консоль 2 раза слово «Привет».
-let i =1;
-let n = Number(prompt('Сколько раз вам сказать привет'));
-while (i <= n){
-    alert('Привет');
-    i++;
+// Задание 1
+const numbs = [1,5,4,0,3];
+for (let i =0; i < numbs.length; i++){
+    if (numbs [i]==10);
+    console.log(numbs[i]);
 }
 
+// Задание 2
+let tasktwo= [1,5,4,10,0,3];
+let res = tasktwo.indexOf(4);
 
-// Задание 2 Выведите в консоль цифры от 1 до 5.
+console.log(res); //Выводит 2
 
-let a= 0;
-while (a<6){ 
-    console.log(a);
-    a++;
-};
-
-// Задание 3 Выведите в консоль числа от 7 до 22.
-for (let c = 7; c <= 22; c++) {
-	console.log(c); 
-}
-
+// Задание 3
+let taskthree= ['1','3','5','10','20'];
+result= taskthree.join(' ');
+console.log(result); //1 3 5 10 20
 
 // Задание 4
+var array = [];
 
- const week = {
-    Коля: "зарплата 200 долларов",
-    Вася: "зарплата 300 долларов",
-    Петя: "зарплата 400 долларов",
- }
-
- for ( let obj in week) {
-    console.log(obj); // Коля, Вся, Петя
-    console.log(week[obj]); //зарплата 200 долларов
+for (var i = 0; i < 3; i++) {
+var innerArray = [];
+for (var j = 0; j < 3; j++) {
+innerArray.push(1);
 }
+array.push(innerArray);
+}
+
+console.log(array);
+
 
 // Задание 5
+var array = [1, 1, 1];
+array.push(2, 2, 2);
 
-for (let n = 1000, num = 0; n > 50; num++) {
+console.log(array);
 
-    n /= 2;
-        alert( n );
-    }
 
-// Задание 6 
+// Задание 6
+let taskfive = [9, 8, 7,'a', 6, 5];
+// Удаление буквы 'a'
+taskfive = taskfive.filter(element => typeof element === 'number');
+// Сортировка массива
+taskfive.sort();
+// Вывод отсортированного массива
+console.log(taskfive);
 
-for (let friday = 5; friday <= 31; friday+=7) {
-    console.log (`Сегодня пятница ${friday}-е число. Необходимо подготовить отчет`); 
+
+// Задание 7
+let b = [9,8,7,6,5]
+let a = Number(prompt('Угадайте число'));
+if (b.includes(Number(a))) {
+    console.log('Угадал');
+} else {
+    console.log('Не угадал');
 }
+
+// Задание 8
+// Задание 9
+// Задание 10
+// Задание 11
+// Задание 12
+// Задание 13
