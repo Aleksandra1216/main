@@ -93,6 +93,7 @@ function getWordLengths(arr) {
 const sal = ['слово', 'цифра', 'слог', 'длинное предложение', 'буква'];
 console.log(getWordLengths(sal)); //5,5,4,18,5
 
+
 // Задание 13
 function filterPositive(array) {
     return array.filter(num => num < 0);
@@ -100,3 +101,6 @@ function filterPositive(array) {
 
 console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
 console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
+
+
+
