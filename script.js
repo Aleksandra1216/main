@@ -35,11 +35,8 @@ console.log(array);
 
 // Задание 6
 let taskfive = [9, 8, 7,'a', 6, 5];
-// Удаление буквы 'a'
 taskfive = taskfive.filter(element => typeof element === 'number');
-// Сортировка массива
 taskfive.sort();
-// Вывод отсортированного массива
 console.log(taskfive);
 
 
