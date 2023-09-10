@@ -8,7 +8,6 @@ for (let i =0; i < numbs.length; i++){
 // Задание 2
 let tasktwo= [1,5,4,10,0,3];
 let res = tasktwo.indexOf(4);
-
 console.log(res); //Выводит 2
 
 // Задание 3
@@ -18,7 +17,6 @@ console.log(result); //1 3 5 10 20
 
 // Задание 4
 var array = [];
-
 for (var i = 0; i < 3; i++) {
 var innerArray = [];
 for (var j = 0; j < 3; j++) {
@@ -26,14 +24,12 @@ innerArray.push(1);
 }
 array.push(innerArray);
 }
-
 console.log(array);
 
 
 // Задание 5
 var array = [1, 1, 1];
 array.push(2, 2, 2);
-
 console.log(array);
 
 
@@ -72,7 +68,6 @@ console.log(task);
 
 // Задание 10
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 6];
-
 for(let i = 0; i < arr.length - 1; i++) {
 let sum = arr[i] + arr[i + 1];
 console.log(sum);
@@ -89,7 +84,6 @@ console.log (getWord(salary));
 function getWordLengths(arr) {
     return arr.map(word => word.length);
   }
-  
 const sal = ['слово', 'цифра', 'слог', 'длинное предложение', 'буква'];
 console.log(getWordLengths(sal)); //5,5,4,18,5
 
@@ -98,7 +92,6 @@ console.log(getWordLengths(sal)); //5,5,4,18,5
 function filterPositive(array) {
     return array.filter(num => num < 0);
   }
-
 console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
 console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
 
