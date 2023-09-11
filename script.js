@@ -16,10 +16,10 @@ result= taskthree.join(' ');
 console.log(result); //1 3 5 10 20
 
 // Задание 4
-var array = [];
-for (var i = 0; i < 3; i++) {
-var innerArray = [];
-for (var j = 0; j < 3; j++) {
+let array = [];
+for (let i = 0; i < 3; i++) {
+let innerArray = [];
+for (let j = 0; j < 3; j++) {
 innerArray.push(1);
 }
 array.push(innerArray);
@@ -28,9 +28,9 @@ console.log(array);
 
 
 // Задание 5
-var array = [1, 1, 1];
-array.push(2, 2, 2);
-console.log(array);
+let taskarray = [1, 1, 1];
+taskarray.push(2, 2, 2);
+console.log(taskarray);
 
 
 // Задание 6
@@ -60,8 +60,8 @@ let task=[
     [1, 2, 3,],
     [, 4, 5, 6],
 ];
-task= task.join('');
-console.log(task);
+const flat = task.flat()
+console.log(flat)
 
 // Задание 10
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 6];
