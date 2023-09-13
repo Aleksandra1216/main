@@ -1,50 +1,89 @@
-
-// Задание 1 Выведите в консоль 2 раза слово «Привет».
-let i =1;
-let n = Number(prompt('Сколько раз вам сказать привет'));
-while (i <= n){
-    alert('Привет');
-    i++;
+// Задание 1
+const numbs = [1,5,4,0,3];
+for (let i =0; i < numbs.length; i++){
+    if (numbs [i]==10);
+    console.log(numbs[i]);
 }
 
+// Задание 2
+let tasktwo= [1,5,4,10,0,3];
+let res = tasktwo.indexOf(4);
+console.log(res);
 
-// Задание 2 Выведите в консоль цифры от 1 до 5.
-
-let a= 0;
-while (a<6){ 
-    console.log(a);
-    a++;
-};
-
-// Задание 3 Выведите в консоль числа от 7 до 22.
-for (let c = 7; c <= 22; c++) {
-	console.log(c); 
-}
-
+// Задание 3
+let taskthree= ['1','3','5','10','20'];
+result= taskthree.join(' ');
+console.log(result);
 
 // Задание 4
-
- const week = {
-    Коля: "зарплата 200 долларов",
-    Вася: "зарплата 300 долларов",
-    Петя: "зарплата 400 долларов",
- }
-
- for ( let obj in week) {
-    console.log(obj); // Коля, Вся, Петя
-    console.log(week[obj]); //зарплата 200 долларов
+let array = [];
+for (let i = 0; i < 3; i++) {
+let innerArray = [];
+for (let j = 0; j < 3; j++) {
+innerArray.push(1);
 }
+array.push(innerArray);
+}
+console.log(array);
 
 // Задание 5
+let taskarray = [1, 1, 1];
+taskarray.push(2, 2, 2);
+console.log(taskarray);
 
-for (let n = 1000, num = 0; n > 50; num++) {
+// Задание 6
+let taskfive = [9, 8, 7,'a', 6, 5];
+taskfive = taskfive.filter(element => typeof element === 'number');
+taskfive.sort();
+console.log(taskfive);
 
-    n /= 2;
-        alert( n );
-    }
-
-// Задание 6 
-
-for (let friday = 5; friday <= 31; friday+=7) {
-    console.log (`Сегодня пятница ${friday}-е число. Необходимо подготовить отчет`); 
+// Задание 7
+let b = [9,8,7,6,5]
+let a = Number(prompt('Угадайте число'));
+if (b.includes(Number(a))) {
+    console.log('Угадал');
+} else {
+    console.log('Не угадал');
 }
+
+// Задание 8
+const num = ['a','b','c','d','e','f'];
+num.reverse();
+console.log(num);
+
+// Задание 9
+let task=[
+    [1, 2, 3,],
+    [, 4, 5, 6],
+];
+const flat = task.flat()
+console.log(flat);
+
+// Задание 10
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 6];
+for(let i = 0; i < arr.length - 1; i++) {
+let sum = arr[i] + arr[i + 1];
+console.log(sum)
+};
+
+// Задание 11
+function getWord(arr) {
+    return arr.map(word => (word ** 2));
+  }
+const salary = [2, 5, 7, 3, 1];
+console.log (getWord(salary));
+
+
+// Задание 12
+function getWordLengths(arr) {
+    return arr.map(word => word.length);
+  }
+const sal = ['слово', 'цифра', 'слог', 'длинное предложение', 'буква'];
+console.log(getWordLengths(sal));
+
+// Задание 13
+function filterPositive(array) {
+    return array.filter(num => num < 0);
+  }
+console.log(filterPositive([-1, 0, 5, -10, 56])); 
+console.log(filterPositive([-25, 25, 0, -1000, -2]));
