@@ -8,12 +8,12 @@ for (let i =0; i < numbs.length; i++){
 // Задание 2
 let tasktwo= [1,5,4,10,0,3];
 let res = tasktwo.indexOf(4);
-console.log(res); //Выводит 2
+console.log(res); 
 
 // Задание 3
 let taskthree= ['1','3','5','10','20'];
 result= taskthree.join(' ');
-console.log(result); //1 3 5 10 20
+console.log(result);
 
 // Задание 4
 let array = [];
@@ -26,19 +26,16 @@ array.push(innerArray);
 }
 console.log(array);
 
-
 // Задание 5
 let taskarray = [1, 1, 1];
 taskarray.push(2, 2, 2);
 console.log(taskarray);
-
 
 // Задание 6
 let taskfive = [9, 8, 7,'a', 6, 5];
 taskfive = taskfive.filter(element => typeof element === 'number');
 taskfive.sort();
 console.log(taskfive);
-
 
 // Задание 7
 let b = [9,8,7,6,5]
@@ -47,13 +44,12 @@ if (b.includes(Number(a))) {
     console.log('Угадал');
 } else {
     console.log('Не угадал');
-}
+};
 
 // Задание 8
 const num = ['a','b','c','d','e','f'];
 num.reverse();
 console.log(num);
-
 
 // Задание 9
 let task=[
@@ -61,14 +57,14 @@ let task=[
     [, 4, 5, 6],
 ];
 const flat = task.flat()
-console.log(flat)
+console.log(flat);
 
 // Задание 10
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 6];
 for(let i = 0; i < arr.length - 1; i++) {
 let sum = arr[i] + arr[i + 1];
-console.log(sum);
-}
+console.log(sum)
+};
 
 // Задание 11
 function getWord(arr) {
@@ -82,15 +78,11 @@ function getWordLengths(arr) {
     return arr.map(word => word.length);
   }
 const sal = ['слово', 'цифра', 'слог', 'длинное предложение', 'буква'];
-console.log(getWordLengths(sal)); //5,5,4,18,5
-
+console.log(getWordLengths(sal));
 
 // Задание 13
 function filterPositive(array) {
     return array.filter(num => num < 0);
   }
-console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
-console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
-
-
-
+console.log(filterPositive([-1, 0, 5, -10, 56])); 
+console.log(filterPositive([-25, 25, 0, -1000, -2]));
