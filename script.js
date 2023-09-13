@@ -1,50 +1,63 @@
+//Задание 1
+console.log("js".toUpperCase()); // 'JS'
 
-// Задание 1 Выведите в консоль 2 раза слово «Привет».
-let i =1;
-let n = Number(prompt('Сколько раз вам сказать привет'));
-while (i <= n){
-    alert('Привет');
-    i++;
-}
+//Задание 2
+//const products = [
+   //['Кошка', 'Кит', 'Комар', 'Носорог'],
+   //['яблоко', 'груша', 'гриб', 'огурец'],
+   //['Дом', 'Банк', 'Больница', 'Театр'],
+//]
+//const search1 = 'ко';
+//const search2 =  'гру';
+//const search3 = 'Кино';
+//products.forEach((product) => {
+  //  if (product.toLowerCase().startsWith(search1.toLowerCase())) {
+ //       console.log(product);
+   // }
+//});
 
+//Задание 3
+//До меньшего целого:
+console.log(Math.floor(32.58884)); // 32
+//До большего целого:
+console.log(Math.ceil(32.58884)); // 33
+//До ближайшего целого:
+console.log(Math.round(32.58884)); // 33
 
-// Задание 2 Выведите в консоль цифры от 1 до 5.
+//Задание 4
+let numbers = [52, 53, 49, 77, 21, 32];
+let min = Math.min(...numbers);
+let max = Math.max(...numbers);
 
-let a= 0;
-while (a<6){ 
-    console.log(a);
-    a++;
-};
+console.log(`Наименьшее число: ${min}`);
+console.log(`Наибольшее число: ${max}`);
 
-// Задание 3 Выведите в консоль числа от 7 до 22.
-for (let c = 7; c <= 22; c++) {
-	console.log(c); 
-}
-
-
-// Задание 4
-
- const week = {
-    Коля: "зарплата 200 долларов",
-    Вася: "зарплата 300 долларов",
-    Петя: "зарплата 400 долларов",
- }
-
- for ( let obj in week) {
-    console.log(obj); // Коля, Вся, Петя
-    console.log(week[obj]); //зарплата 200 долларов
-}
-
-// Задание 5
-
-for (let n = 1000, num = 0; n > 50; num++) {
-
-    n /= 2;
-        alert( n );
+//Задание 5
+function getRandomNumber() {
+    // Генерируем рандомное число от 1 до 10
+    let randomNumber = Math.floor(Math.random() * 10);
+    console.log(randomNumber); // Выводим число в консоль
     }
+    getRandomNumber();  // Вызываем функцию
 
-// Задание 6 
+  
+//Задание 6
 
-for (let friday = 5; friday <= 31; friday+=7) {
-    console.log (`Сегодня пятница ${friday}-е число. Необходимо подготовить отчет`); 
-}
+
+//Задание 7
+
+   
+
+//Задание 8
+let currentDat= new Date();
+console.log(currentDat);
+
+
+//Задание 9
+let currentDate= new Date();
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate);
+
+//Задание 10
+
+
