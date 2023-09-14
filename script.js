@@ -2,19 +2,15 @@
 console.log("js".toUpperCase()); // 'JS'
 
 //Задание 2
-//const products = [
-   //['Кошка', 'Кит', 'Комар', 'Носорог'],
-   //['яблоко', 'груша', 'гриб', 'огурец'],
-   //['Дом', 'Банк', 'Больница', 'Театр'],
-//]
-//const search1 = 'ко';
-//const search2 =  'гру';
-//const search3 = 'Кино';
-//products.forEach((product) => {
-  //  if (product.toLowerCase().startsWith(search1.toLowerCase())) {
- //       console.log(product);
-   // }
-//});
+ function filterWords(array, keyword) {
+   const filteredArray = array.filter(word => word.toLowerCase().startsWith(keyword.toLowerCase()));
+   return filteredArray;
+   }
+   
+   const words = ['apple', 'banana', 'orange', 'grapefruit'];
+   const keyword = 'ap';
+   
+   console.log(filterWords(words, keyword)); //  ['apple']
 
 //Задание 3
 //До меньшего целого:
@@ -42,10 +38,22 @@ function getRandomNumber() {
 
   
 //Задание 6
-
+function getRandomArray(num) {
+   const arr = [];
+   const length = num / 2;
+   
+   for (let i = 0; i < length; i++) {
+   arr.push(Math.floor(Math.random() * num));
+   }
+   return arr;
+   }
+   console.log(getRandomArray(8));
 
 //Задание 7
-
+function getRandomInt (num1, num2) {
+   return Math.round (Math.random() * (num1 - num2)) + num2;
+}
+console.log(getRandomInt(3, 9));
    
 
 //Задание 8
@@ -59,5 +67,13 @@ currentDate.setDate(currentDate.getDate() + 73);
 console.log(currentDate);
 
 //Задание 10
-
+function formatDate(date) {
+   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+   const formattedDate = date.toLocaleDateString('ru-RU', options);
+   const formattedTime = date.toLocaleTimeString('ru-RU');
+   return `Дата: ${formattedDate} - это ${formattedDate.split(', ')[1]}'.
+Время: ${formattedTime}`;
+}
+const date = new Date();
+console.log(formatDate(date));
 
