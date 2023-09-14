@@ -121,7 +121,7 @@ color:#FFF;
     background: #000915;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 120px;
+    grid-gap: 1 em 20px;
     padding-top: 282px;
     padding-bottom: 282px;
 }
@@ -211,6 +211,7 @@ transition: all 1s;
   .for__item{
     grid-column: 1 / -1;
   }
+
 
   .game{
     grid-template-columns: repeat(4, 1fr);

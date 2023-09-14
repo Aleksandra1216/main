@@ -77,3 +77,31 @@ function formatDate(date) {
 const date = new Date();
 console.log(formatDate(date));
 
+
+
+
+
+document.getQuerySelector('#game__btn').addEventListener('click',playFunc);
+let fruits =['Яблоко','Дыня','Виноград','Персик','Апельсин','Мандарин'];
+fruits = fruits.sort(() => Math.random() - 0.5);
+alert (fruits);
+let first= prompt('Чему равнялся первый элемент массива?');
+let last= prompt('Чему равнялся последний элемент массива?');
+   if (first === fruits[0] && last === fruits[fruits.length-1]) {
+      alert("Поздравляем, вы угадали оба слова!");
+   } else if(first === fruits[0] || last === fruits[fruits.length-1]){
+      alert("Вы были близки к победе!");
+   } else {
+      alert("Вы ответили неверно.");
+   }
+
+
+
+
+
+
+
+
+
+
+
