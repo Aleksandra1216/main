@@ -78,8 +78,8 @@ const date = new Date();
 console.log(formatDate(date));
 
 
-
-
+//
+//
 
 document.getQuerySelector('#game__btn').addEventListener('click',playFunc);
 let fruits =['Яблоко','Дыня','Виноград','Персик','Апельсин','Мандарин'];
