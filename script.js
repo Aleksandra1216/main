@@ -1,50 +1,87 @@
+//Задание 1
+const people1 = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+ ];
+ people1.sort((a, b) => a.age - b.age);
+console.log(people1);
 
-// Задание 1 Выведите в консоль 2 раза слово «Привет».
-let i =1;
-let n = Number(prompt('Сколько раз вам сказать привет'));
-while (i <= n){
-    alert('Привет');
-    i++;
+//Задание 2
+function map(arr, transformFunction) {
+  var result = [];
+  for (var i = 0; i < arr.length; i++) {
+    var transformedItem = transformFunction(arr[i]);
+    result.push(transformedItem);
+  }
+  return result;
 }
 
-
-// Задание 2 Выведите в консоль цифры от 1 до 5.
-
-let a= 0;
-while (a<6){ 
-    console.log(a);
-    a++;
-};
-
-// Задание 3 Выведите в консоль числа от 7 до 22.
-for (let c = 7; c <= 22; c++) {
-	console.log(c); 
+function isPositive(number) {
+  return number > 0;
 }
 
-
-// Задание 4
-
- const week = {
-    Коля: "зарплата 200 долларов",
-    Вася: "зарплата 300 долларов",
-    Петя: "зарплата 400 долларов",
- }
-
- for ( let obj in week) {
-    console.log(obj); // Коля, Вся, Петя
-    console.log(week[obj]); //зарплата 200 долларов
+function isMale(person) {
+  return person.gender === 'male';
 }
 
-// Задание 5
-
-for (let n = 1000, num = 0; n > 50; num++) {
-
-    n /= 2;
-        alert( n );
+function filter(arr, ruleFunction) {
+  return map(arr, function(item) {
+    if (ruleFunction(item)) {
+      return item;
     }
-
-// Задание 6 
-
-for (let friday = 5; friday <= 31; friday+=7) {
-    console.log (`Сегодня пятница ${friday}-е число. Необходимо подготовить отчет`); 
+  }).filter(Boolean); // убираем все falsy значения из результирующего массива
 }
+
+console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+
+const people = [
+   {name: 'Глеб', gender: 'male'},
+   {name: 'Анна', gender: 'female'},
+   {name: 'Олег', gender: 'male'},
+   {name: 'Оксана', gender: 'female'}
+];
+
+console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+
+//Задание 3
+function printCurrentDate() {
+  const currentDate = new Date();
+  console.log(currentDate);
+}
+
+function executeEvery3Seconds() {
+  return setInterval(printCurrentDate, 3000);
+}
+
+const intervalId = executeEvery3Seconds();
+
+setTimeout(() => {
+  clearInterval(intervalId);
+  console.log("30 секунд прошло");
+}, 30000);
+
+//Задание 4
+function delayForSecond(callback) {
+  setTimeout (function() {
+  callback();
+  }, 1000);
+}
+
+delayForSecond(function () {
+  console.log('Привет, Глеб!');
+})
+
+//Задание 5
+function delayForSecond(cb) {
+  setTimeout(() => {
+      console.log('Прошла одна секунда');
+      if(cb) { 	cb(); }
+
+  }, 1000)
+}
+function sayHi (name) {
+  console.log(`Привет, ${name}!`);
+}
+delayForSecond(() => sayHi('Глеб'))
